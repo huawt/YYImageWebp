@@ -10,28 +10,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#if __has_include(<YYImage/YYImage.h>)
-FOUNDATION_EXPORT double YYImageVersionNumber;
-FOUNDATION_EXPORT const unsigned char YYImageVersionString[];
-#import <YYImage/YYFrameImage.h>
-#import <YYImage/YYSpriteSheetImage.h>
-#import <YYImage/YYImageCoder.h>
-#import <YYImage/YYAnimatedImageView.h>
-#elif __has_include(<YYWebImage/YYImage.h>)
-#import <YYWebImage/YYFrameImage.h>
-#import <YYWebImage/YYSpriteSheetImage.h>
-#import <YYWebImage/YYImageCoder.h>
-#import <YYWebImage/YYAnimatedImageView.h>
-#else
-#import "YYFrameImage.h"
-#import "YYSpriteSheetImage.h"
-#import "YYImageCoder.h"
-#import "YYAnimatedImageView.h"
-#endif
+#import "YYImageWebp.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
 
 /**
  A YYImage object is a high-level way to display animated image data.

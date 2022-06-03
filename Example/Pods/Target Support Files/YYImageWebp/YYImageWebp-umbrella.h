@@ -14,6 +14,7 @@
 #import "YYFrameImage.h"
 #import "YYImage.h"
 #import "YYImageCoder.h"
+#import "YYImageWebp.h"
 #import "YYSpriteSheetImage.h"
 
 FOUNDATION_EXPORT double YYImageWebpVersionNumber;
