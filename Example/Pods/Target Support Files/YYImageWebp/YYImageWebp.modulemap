@@ -1,0 +1,6 @@
+framework module YYImageWebp {
+  umbrella header "YYImageWebp-umbrella.h"
+
+  export *
+  module * { export * }
+}
