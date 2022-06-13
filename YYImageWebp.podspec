@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'YYImageWebp'
-s.version          = '0.1.0'
+s.version          = '0.1.1'
 s.summary          = 'Image framework for iOS to display/encode/decode animated WebP, APNG, GIF, and more.'
 s.homepage         = 'https://github.com/huawt/YYImageWebp'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
