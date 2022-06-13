@@ -7,6 +7,7 @@
 //
 
 #import "LRViewController.h"
+#import <YYImageWebp/YYImageWebp.h>
 
 @interface LRViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(100, 200, 200, 200)];
+    
 }
 
 - (void)didReceiveMemoryWarning

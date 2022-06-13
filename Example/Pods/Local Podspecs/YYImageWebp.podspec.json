@@ -23,10 +23,11 @@
     "UIKit",
     "CoreFoundation",
     "QuartzCore",
-    "AssetsLibrary",
     "ImageIO",
     "Accelerate",
-    "MobileCoreServices"
+    "Photos",
+    "PhotosUI",
+    "CoreServices"
   ],
   "vendored_frameworks": "YYImageWebp/Vendor/WebP.framework"
 }

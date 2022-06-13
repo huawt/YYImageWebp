@@ -11,6 +11,6 @@ s.ios.deployment_target = '9.0'
 
 s.source_files = 'YYImageWebp/Classes/**/*'
 s.public_header_files = 'YYImageWebp/Classes/**/*.h'
-s.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore', 'AssetsLibrary', 'ImageIO', 'Accelerate', 'MobileCoreServices'
+s.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore', 'ImageIO', 'Accelerate', 'Photos', 'PhotosUI', 'CoreServices'
 s.vendored_frameworks = 'YYImageWebp/Vendor/WebP.framework'
 end

@@ -15,8 +15,8 @@
 #import <ImageIO/ImageIO.h>
 #import <Accelerate/Accelerate.h>
 #import <QuartzCore/QuartzCore.h>
-#import <MobileCoreServices/MobileCoreServices.h>
-#import <AssetsLibrary/AssetsLibrary.h>
+#import <CoreServices/CoreServices.h>
+#import <Photos/Photos.h>
 #import <objc/runtime.h>
 #import <pthread.h>
 #import <zlib.h>
@@ -641,7 +641,7 @@ static inline CGFloat YYImageDegreesToRadians(CGFloat degrees) {
     return degrees * M_PI / 180;
 }
 
-CGColorSpaceRef YYCGColorSpaceGetDeviceRGB() {
+CGColorSpaceRef YYCGColorSpaceGetDeviceRGB(void) {
     static CGColorSpaceRef space;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -650,7 +650,7 @@ CGColorSpaceRef YYCGColorSpaceGetDeviceRGB() {
     return space;
 }
 
-CGColorSpaceRef YYCGColorSpaceGetDeviceGray() {
+CGColorSpaceRef YYCGColorSpaceGetDeviceGray(void) {
     static CGColorSpaceRef space;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -1230,7 +1230,7 @@ CFDataRef YYCGImageCreateEncodedData(CGImageRef imageRef, YYImageType type, CGFl
 
 #if YYIMAGE_WEBP_ENABLED
 
-BOOL YYImageWebPAvailable() {
+BOOL YYImageWebPAvailable(void) {
     return YES;
 }
 
@@ -2794,16 +2794,14 @@ CGImageRef YYCGImageCreateWithWebPData(CFDataRef webpData,
 
 - (void)yy_saveToAlbumWithCompletionBlock:(void(^)(NSURL *assetURL, NSError *error))completionBlock {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSData *data = [self _yy_dataRepresentationForSystem:YES];
-        ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-        [library writeImageDataToSavedPhotosAlbum:data metadata:nil completionBlock:^(NSURL *assetURL, NSError *error){
-            if (!completionBlock) return;
-            if (pthread_main_np()) {
-                completionBlock(assetURL, error);
+//        NSData *data = [self _yy_dataRepresentationForSystem:YES];
+        [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+            [PHAssetChangeRequest creationRequestForAssetFromImage:self];
+        } completionHandler:^(BOOL success, NSError * _Nullable error) {
+            if (success) {
+                completionBlock(nil, nil);
             } else {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    completionBlock(assetURL, error);
-                });
+                completionBlock(nil, nil);
             }
         }];
     });

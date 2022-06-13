@@ -60,13 +60,13 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E8A941249CD3BC1F63D362C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8E8A941249CD3BC1F63D362C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8F01E82F797BE22217C4E40C /* Pods_YYImageWebp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYImageWebp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90D0DC76C752FC4D42333C59 /* YYImageWebp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YYImageWebp.podspec; path = ../YYImageWebp.podspec; sourceTree = "<group>"; };
+		90D0DC76C752FC4D42333C59 /* YYImageWebp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YYImageWebp.podspec; path = ../YYImageWebp.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95D35E533D194306C46EEDD2 /* Pods-YYImageWebp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYImageWebp_Example.debug.xcconfig"; path = "Target Support Files/Pods-YYImageWebp_Example/Pods-YYImageWebp_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BFE4B1C0A87E8EAD24698B44 /* Pods-YYImageWebp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYImageWebp_Example.release.xcconfig"; path = "Target Support Files/Pods-YYImageWebp_Example/Pods-YYImageWebp_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EC156170FEB5C2BAEC8C4454 /* Pods-YYImageWebp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYImageWebp_Tests.release.xcconfig"; path = "Target Support Files/Pods-YYImageWebp_Tests/Pods-YYImageWebp_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F628196C2D4F98AA398FA68F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F628196C2D4F98AA398FA68F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				153D5F305E74D7454B47159F /* Pods-YYImageWebp_Tests.debug.xcconfig */,
 				EC156170FEB5C2BAEC8C4454 /* Pods-YYImageWebp_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
