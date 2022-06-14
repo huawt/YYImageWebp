@@ -20,9 +20,6 @@
 #import <objc/runtime.h>
 #import <pthread.h>
 #import <zlib.h>
-#import "YYSpriteSheetImage.h"
-
-
 
 #ifndef YYIMAGE_WEBP_ENABLED
 #if __has_include(<webp/decode.h>) && __has_include(<webp/encode.h>) && \
@@ -2784,7 +2781,7 @@ CGImageRef YYCGImageCreateWithWebPData(CFDataRef webpData,
 }
 
 - (BOOL)yy_isDecodedForDisplay {
-    if (self.images.count > 1 || [self isKindOfClass:[YYSpriteSheetImage class]]) return YES;
+    if (self.images.count > 1 || [self isKindOfClass:NSClassFromString(@"YYSpriteSheetImage")]) return YES;
     NSNumber *num = objc_getAssociatedObject(self, @selector(yy_isDecodedForDisplay));
     return [num boolValue];
 }
