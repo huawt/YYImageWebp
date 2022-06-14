@@ -1,5 +1,5 @@
 PODS:
-  - YYImageWebp (0.1.4)
+  - YYImageWebp (0.1.5)
 
 DEPENDENCIES:
   - YYImageWebp (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YYImageWebp: 6ddd122ae532a18421baad19bf778476c955b329
+  YYImageWebp: d4c3a968cc42adda7b48a6eba8f8efcf64b03ee6
 
 PODFILE CHECKSUM: 41d6486a7ec9e5fa6d120d460499141c18e2dca0
 

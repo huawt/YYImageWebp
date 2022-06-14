@@ -11,10 +11,8 @@
 
 #import <UIKit/UIKit.h>
 
-#if __has_include(<YYImage/YYImage.h>)
-#import <YYImage/YYAnimatedImageView.h>
-#elif __has_include(<YYWebImage/YYImage.h>)
-#import <YYWebImage/YYAnimatedImageView.h>
+#if __has_include(<YYImageWebp/YYImageWebp.h>)
+#import <YYImageWebp/YYAnimatedImageView.h>
 #else
 #import "YYAnimatedImageView.h"
 #endif
