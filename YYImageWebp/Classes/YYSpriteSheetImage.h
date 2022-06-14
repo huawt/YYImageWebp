@@ -10,12 +10,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#if __has_include(<YYImageWebp/YYImageWebp.h>)
-#import <YYImageWebp/YYAnimatedImageView.h>
-#else
 #import "YYAnimatedImageView.h"
-#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
