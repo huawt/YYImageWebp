@@ -20,6 +20,7 @@
 #import <objc/runtime.h>
 #import <pthread.h>
 #import <zlib.h>
+#import "YYSpriteSheetImage.h"
 
 
 
