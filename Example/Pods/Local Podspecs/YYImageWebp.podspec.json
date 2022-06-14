@@ -1,6 +1,6 @@
 {
   "name": "YYImageWebp",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "summary": "Image framework for iOS to display/encode/decode animated WebP, APNG, GIF, and more.",
   "homepage": "https://github.com/huawt/YYImageWebp",
   "license": {
@@ -12,10 +12,10 @@
   },
   "source": {
     "git": "https://github.com/huawt/YYImageWebp.git",
-    "tag": "0.1.3"
+    "tag": "0.1.4"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "12.0"
   },
   "source_files": "YYImageWebp/Classes/**/*",
   "public_header_files": "YYImageWebp/Classes/**/*.h",
@@ -23,7 +23,8 @@
     "UIKit",
     "Photos",
     "PhotosUI",
-    "CoreServices"
+    "CoreServices",
+    "UIFoundation"
   ],
   "vendored_frameworks": "YYImageWebp/Vendor/WebP.framework"
 }
