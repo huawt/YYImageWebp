@@ -24,7 +24,7 @@
     "Photos",
     "PhotosUI",
     "CoreServices",
-    "UIFoundation"
+    "Foundation"
   ],
   "vendored_frameworks": "YYImageWebp/Vendor/WebP.framework"
 }

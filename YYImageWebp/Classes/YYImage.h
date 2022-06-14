@@ -10,7 +10,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YYAnimatedImageView.h"
+#import "YYImageWebp.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
