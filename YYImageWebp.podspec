@@ -11,6 +11,5 @@ s.ios.deployment_target = '12.0'
 
 s.source_files = 'YYImageWebp/Classes/**/*'
 s.public_header_files = 'YYImageWebp/Classes/**/*.h'
-s.frameworks = 'UIKit','Photos','PhotosUI','CoreServices', 'Foundation'
 s.vendored_frameworks = 'YYImageWebp/Vendor/WebP.framework'
 end
