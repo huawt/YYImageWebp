@@ -11,6 +11,7 @@
 
 #import "YYFrameImage.h"
 #import "YYImageCoder.h"
+#import "YYAnimatedImageView.h"
 
 
 /**
@@ -42,7 +43,9 @@ static CGFloat _NSStringPathScale(NSString *string) {
     return scale;
 }
 
+@interface YYFrameImage ()<YYAnimatedImage>
 
+@end
 
 @implementation YYFrameImage {
     NSUInteger _loopCount;

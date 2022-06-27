@@ -10,7 +10,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YYAnimatedImageView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
      YYAnimatedImageView *imageView = [YYAnimatedImageView alloc] initWithImage:image];
      [view addSubView:imageView];
  */
-@interface YYFrameImage : UIImage <YYAnimatedImage>
+@interface YYFrameImage : UIImage
 
 /**
  Create a frame animated image from files.

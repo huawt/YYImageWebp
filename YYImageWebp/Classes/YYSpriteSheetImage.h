@@ -10,7 +10,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "YYAnimatedImageView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -56,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
     imageView.layer.contentsRect = [sheet contentsRectForCALayerAtIndex:6];
  
  */
-@interface YYSpriteSheetImage : UIImage <YYAnimatedImage>
+@interface YYSpriteSheetImage : UIImage
 
 /**
  Creates and returns an image object.

@@ -10,7 +10,7 @@
 //
 
 #import "YYImage.h"
-
+#import "YYAnimatedImageView.h"
 /**
  An array of NSNumber objects, shows the best order for path scale search.
  e.g. iPhone3GS:@[@1,@2,@3] iPhone5:@[@2,@3,@1]  iPhone6 Plus:@[@3,@2,@1]
@@ -82,6 +82,10 @@ static CGFloat _NSStringPathScale(NSString *string) {
     
     return scale;
 }
+
+@interface YYImage ()<YYAnimatedImage>
+
+@end
 
 
 @implementation YYImage {

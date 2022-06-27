@@ -10,6 +10,11 @@
 //
 
 #import "YYSpriteSheetImage.h"
+#import "YYAnimatedImageView.h"
+
+@interface YYSpriteSheetImage ()<YYAnimatedImage>
+
+@end
 
 @implementation YYSpriteSheetImage
 

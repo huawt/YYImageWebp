@@ -11,7 +11,6 @@
 
 #import <UIKit/UIKit.h>
 #import "YYImageCoder.h"
-#import "YYAnimatedImageView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -33,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
      [view addSubView:imageView];
     
  */
-@interface YYImage : UIImage <YYAnimatedImage>
+@interface YYImage : UIImage
 
 + (nullable YYImage *)imageNamed:(NSString *)name; // no cache!
 + (nullable YYImage *)imageWithContentsOfFile:(NSString *)path;
