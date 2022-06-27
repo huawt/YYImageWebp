@@ -19,12 +19,5 @@
   },
   "source_files": "YYImageWebp/Classes/**/*",
   "public_header_files": "YYImageWebp/Classes/**/*.h",
-  "frameworks": [
-    "UIKit",
-    "Photos",
-    "PhotosUI",
-    "CoreServices",
-    "Foundation"
-  ],
   "vendored_frameworks": "YYImageWebp/Vendor/WebP.framework"
 }
