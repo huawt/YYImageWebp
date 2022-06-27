@@ -7,7 +7,7 @@ s.homepage         = 'https://github.com/huawt/YYImageWebp'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.authors      = { 'ibireme' => 'ibireme@gmail.com' }
 s.source           = { :git => 'https://github.com/huawt/YYImageWebp.git', :tag => s.version.to_s }
-
+s.ios.deployment_target = '12.0'
 s.source_files = 'YYImageWebp/Classes/*.*'
 s.vendored_frameworks = 'YYImageWebp/Vendor/WebP.framework'
 end

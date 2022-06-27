@@ -14,12 +14,9 @@
     "git": "https://github.com/huawt/YYImageWebp.git",
     "tag": "1.0.0"
   },
-  "source_files": "YYImageWebp/Classes/*.*",
-  "vendored_frameworks": "YYImageWebp/Vendor/WebP.framework",
   "platforms": {
-    "osx": null,
-    "ios": null,
-    "tvos": null,
-    "watchos": null
-  }
+    "ios": "12.0"
+  },
+  "source_files": "YYImageWebp/Classes/*.*",
+  "vendored_frameworks": "YYImageWebp/Vendor/WebP.framework"
 }
