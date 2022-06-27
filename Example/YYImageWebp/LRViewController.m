@@ -20,6 +20,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     UIImageView *image = [[UIImageView alloc] initWithFrame:CGRectMake(100, 200, 200, 200)];
+    image.image = [YYImage imageNamed:@"WechatIMG5342.png"];
+    [self.view addSubview:image];
     
 }
 
