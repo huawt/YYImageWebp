@@ -18,5 +18,8 @@
     "ios": "12.0"
   },
   "source_files": "YYImageWebp/Classes/*.*",
-  "vendored_frameworks": "YYImageWebp/Vendor/WebP.framework"
+  "vendored_frameworks": "YYImageWebp/Vendor/WebP.framework",
+  "pod_target_xcconfig": {
+    "VALID_ARCHS": "x86_64 armv7 arm64"
+  }
 }

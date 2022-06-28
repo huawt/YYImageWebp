@@ -10,4 +10,5 @@ s.source           = { :git => 'https://github.com/huawt/YYImageWebp.git', :tag 
 s.ios.deployment_target = '12.0'
 s.source_files = 'YYImageWebp/Classes/*.*'
 s.vendored_frameworks = 'YYImageWebp/Vendor/WebP.framework'
+s.pod_target_xcconfig = {'VALID_ARCHS'=>'x86_64 armv7 arm64'}
 end
