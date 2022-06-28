@@ -13,6 +13,9 @@
 /* Set to 1 if __builtin_bswap64 is available */
 #define HAVE_BUILTIN_BSWAP64 1
 
+/* Define to 1 if you have the <cpu-features.h> header file. */
+/* #undef HAVE_CPU_FEATURES_H */
+
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 
@@ -25,9 +28,6 @@
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
 
-/* Define to 1 if you have the <memory.h> header file. */
-#define HAVE_MEMORY_H 1
-
 /* Define to 1 if you have the <OpenGL/glut.h> header file. */
 /* #undef HAVE_OPENGL_GLUT_H */
 
@@ -39,6 +39,9 @@
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#define HAVE_STDIO_H 1
 
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1
@@ -64,8 +67,7 @@
 /* Define to 1 if you have the <windows.h> header file. */
 /* #undef HAVE_WINDOWS_H */
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
 #define LT_OBJDIR ".libs/"
 
 /* Name of package */
@@ -78,32 +80,28 @@
 #define PACKAGE_NAME "libwebp"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "libwebp 0.6.0"
+#define PACKAGE_STRING "libwebp 1.2.2"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "libwebp"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "http://developers.google.com/speed/webp"
+#define PACKAGE_URL "https://developers.google.com/speed/webp"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "0.6.0"
+#define PACKAGE_VERSION "1.2.2"
 
 /* Define to necessary symbol if this constant uses a non-standard name on
    your system. */
 /* #undef PTHREAD_CREATE_JOINABLE */
 
-/* Define to 1 if you have the ANSI C header files. */
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "0.6.0"
-
-/* Enable experimental code */
-/* #undef WEBP_EXPERIMENTAL_FEATURES */
-
-/* Set to 1 if AVX2 is supported */
-/* #undef WEBP_HAVE_AVX2 */
+#define VERSION "1.2.2"
 
 /* Set to 1 if GIF library is installed */
 /* #undef WEBP_HAVE_GIF */
@@ -115,13 +113,16 @@
 /* #undef WEBP_HAVE_JPEG */
 
 /* Set to 1 if NEON is supported */
-/* #undef WEBP_HAVE_NEON */
+#define WEBP_HAVE_NEON 1
 
 /* Set to 1 if runtime detection of NEON is enabled */
 /* #undef WEBP_HAVE_NEON_RTCD */
 
 /* Set to 1 if PNG library is installed */
 /* #undef WEBP_HAVE_PNG */
+
+/* Set to 1 if SDL library is installed */
+/* #undef WEBP_HAVE_SDL */
 
 /* Set to 1 if SSE2 is supported */
 /* #undef WEBP_HAVE_SSE2 */
@@ -131,6 +132,9 @@
 
 /* Set to 1 if TIFF library is installed */
 /* #undef WEBP_HAVE_TIFF */
+
+/* Enable near lossless encoding */
+#define WEBP_NEAR_LOSSLESS 1
 
 /* Undefine this to disable thread support. */
 #define WEBP_USE_THREAD 1
